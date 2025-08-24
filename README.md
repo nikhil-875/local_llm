@@ -28,6 +28,17 @@ python app.py
 ```
 Open `http://127.0.0.1:8000` in your browser.
 
+## Streamlit UI (optional)
+```powershell
+# From repo root
+cd .\local_chat
+\.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+$env:MODEL_NAME = "openai/gpt-oss-20b"
+streamlit run streamlit_app.py
+```
+The app will open in your browser (usually `http://localhost:8501`).
+
 ## GPU note
 If you want the CUDA GPU wheel for PyTorch, follow the official selector at
 `https://pytorch.org/get-started/locally/` and install the recommended `torch`
